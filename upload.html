@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Project • GatoShelf</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="upload-container">
+
+    <div class="upload-card">
+
+      <h1>Upload Project</h1>
+      <p>Add your latest website to GatoShelf.</p>
+
+      <form id="uploadForm">
+
+        <input type="text" id="name" placeholder="Website Name" required>
+
+        <input type="url" id="url" placeholder="Website URL" required>
+
+        <div class="image-row">
+          <input type="url" id="image" placeholder="Image URL (optional if uploading file)">
+          <input type="file" id="imageFile" accept="image/*">
+          <input type="text" id="imgbbKey" placeholder="imgbb API Key (optional, required for file uploads)">
+        </div>
+
+        <textarea id="description" placeholder="Description" required></textarea>
+
+        <select id="category">
+          <option>Tools</option>
+          <option>AI</option>
+          <option>Games</option>
+          <option>Utility</option>
+          <option>Portfolio</option>
+        </select>
+
+        <button type="submit">Publish Project</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+<script type="module" src="upload.js"></script>
+
+</body>
+</html>
