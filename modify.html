@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upload Project • GatoShelf</title>
+  <title>Modify Project • GatoShelf</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -18,12 +17,10 @@
 
     <div class="upload-card">
 
-      <h1>Upload Project</h1>
-      <p>Add your latest website to GatoShelf.</p>
+      <h1>Modify Project</h1>
+      <p>Edit the fields below and save changes.</p>
 
-      <a href="edit.html" class="open-btn" style="width:auto; display:inline-block; margin-bottom:16px; text-decoration:none;">Edit Projects</a>
-
-      <form id="uploadForm">
+      <form id="modifyForm">
 
         <input type="text" id="name" placeholder="Website Name" required>
 
@@ -45,7 +42,11 @@
           <option>Portfolio</option>
         </select>
 
-        <button type="submit">Publish Project</button>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <button type="submit">Save Changes</button>
+          <button type="button" id="deleteBtn" style="background:#ff4d4d; color:white; border:none; padding:12px 18px; border-radius:12px; cursor:pointer;">Delete</button>
+          <a href="edit.html" class="open-btn" style="width:auto; display:inline-block; text-decoration:none;">Back to list</a>
+        </div>
 
       </form>
 
@@ -53,7 +54,7 @@
 
   </div>
 
-<script type="module" src="upload.js"></script>
+<script type="module" src="modify.js"></script>
 
 </body>
 </html>

@@ -94,13 +94,13 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
   align-items: stretch;
   width: 100%;
   max-width: 1400px;
-  margin: 0;
-  justify-content: start;
+  margin: 0 auto;
+  justify-content: center;
   padding: 0 20px;
 }
 
@@ -114,8 +114,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 420px;
-  margin: 0 auto; /* center by default on small screens */
+  width: 100%;
 }
 
 .project-card:hover {
@@ -375,6 +374,38 @@ body {
   border-radius: 14px;
   font-weight: 800;
   cursor: pointer;
+}
+
+/* Editor page container and search */
+.editor-container {
+  width: 100%;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.editor-header {
+  max-width: 1100px;
+  margin: 0 auto 20px auto;
+  padding: 0 10px;
+}
+
+.editor-header h1 {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.editor-header p { color: #aaa; margin-bottom: 12px; }
+
+.search-input {
+  width: 100%;
+  max-width: 520px;
+  background: #101010;
+  border: 1px solid #2b2b2b;
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
 }
 
 @media(max-width: 900px) {
