@@ -458,3 +458,73 @@ body {
     margin: 0; /* ensure left alignment */
   }
 }
+
+/* Buttons: professional, consistent */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 100%);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(79,70,229,0.12);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #0b0b0b;
+  padding: 10px 14px;
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #ef4444 0%, #f97316 100%);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(239,68,68,0.12);
+}
+
+.btn:hover { transform: translateY(-3px); opacity: 0.98; }
+
+/* Form actions and modify form styles */
+.form-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+
+#modifyForm { display:flex; flex-direction:column; gap:16px; }
+#modifyForm input,
+#modifyForm textarea,
+#modifyForm select {
+  background: #0f0f0f;
+  border: 1px solid #262626;
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+}
+
+#modifyForm textarea { min-height: 140px; resize: vertical; }
+
+/* Card actions */
+.card-actions { display:flex; gap:10px; margin-top:12px; }
+
+/* Slightly larger image preview on edit pages */
+.img-preview { --preview-height: 140px; }
+
+/* Tidy up project description in cards */
+.card-content p { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 4; }
+
+/* No results message */
+#noResultsMsg { color:#aaa; text-align:center; grid-column: 1/-1; }
+
+@media(max-width:600px) {
+  .editor-header h1 { font-size: 28px; }
+  .project-card { border-radius: 12px; }
+  .img-preview { --preview-height: 110px; }
+}

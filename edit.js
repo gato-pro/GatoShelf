@@ -61,9 +61,9 @@ async function loadProjects(){
           <div class="badge">${data.category}</div>
         </div>
 
-        <div style="display:flex; gap:10px; margin-top:10px;">
+        <div class="card-actions">
           <a class="open-btn" href="modify.html?id=${id}">Edit</a>
-          <button class="delete-btn" style="background:#ff4d4d; color:white; border:none; padding:12px 14px; border-radius:12px; cursor:pointer;">Delete</button>
+          <button class="btn btn-danger delete-btn">Delete</button>
         </div>
 
       </div>
