@@ -91,7 +91,7 @@ function renderProjects(data) {
           </div>
 
           <a class="open-btn" href="${project.url}" target="_blank">
-            Open Website
+            Open Page
           </a>
 
         </div>
@@ -163,7 +163,7 @@ function detectHost(url) {
 
 searchInput.addEventListener('input', () => {
 
-  const value = searchInput.value.toLowerCase();
+  const value = searchInput.value.trim().toLowerCase();
 
   const filtered = projects.filter(project =>
     project.name.toLowerCase().includes(value) ||
