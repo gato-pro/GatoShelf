@@ -19,7 +19,7 @@ async function protectPage(){
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
     if(user.email !== allowedEmail){
-      alert("Only developer can upload.");
+      alert("Only developers or authorized users can upload.");
       window.location.href = "index.html";
     }
   }catch(error){
