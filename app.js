@@ -49,7 +49,7 @@ uploadBtn.addEventListener('click', async () => {
     if (user.email === allowedEmail) {
       window.location.href = 'upload.html';
     } else {
-      alert('Only developer can upload projects.');
+      alert('Only developers or authorized users can upload.');
     }
 
   } catch(error) {
