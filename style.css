@@ -176,7 +176,7 @@ body {
 }
 
 .hero h2 {
-  font-size: 64px;
+  font-size:36px;
   font-weight: 900;
   line-height: 1.1;
 }
@@ -543,7 +543,7 @@ body {
   }
 
   .hero h2 {
-    font-size: 42px;
+    font-size: 36px;
   }
 
 }
@@ -563,7 +563,7 @@ body {
 
 @media(min-width:1200px) {
   .hero h2 {
-    font-size: clamp(40px, 4.5vw, 84px);
+    font-size: clamp(36px, 4.5vw, 50px);
   }
 
   .projects-grid {
